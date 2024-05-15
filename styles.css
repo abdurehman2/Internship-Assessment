@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Poppins;
+}
+
+.img-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e9f8e5;
+}
+
+.img-div img {
+  width: 100%;
+  height: auto;
+}
+
+.form-container {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container .form-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fcfeff;
+  padding: 15px 0;
+}
+
+.form-container .form-div .headings {
+  text-align: center;
+  /* margin-bottom: 10%; */
+}
+
+.form-container .form-div .headings img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+.form-container .form-div .headings h2 {
+  font-size: 20px;
+  color: #585858;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .input-fields {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  /* margin: 30px 0 30px 0; */
+}
+
+.form-container .form-div .container .input-fields input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding-left: 35px;
+}
+
+.form-container .form-div .container button {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #73895d;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 40px;
+}
+.icons-div .p1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.icons-div .p2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.icons-div p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container .input-fields label {
+  margin: auto 0;
+}
+
+.icons-div {
+  margin: 10px 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons-div .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+
+.icons-div .icons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.input-container input {
+  padding-left: 30px; /* Adjust this value based on the size of your logo */
+}
+
+.input-logo {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 15px; /* Adjust this value based on the size of your logo */
+  width: 15px; /* Adjust this value based on the size of your logo */
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .img-div,
+  .form-container .form-div {
+    width: 100%;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .icons-div {
+    width: 80%;
+  }
+}
